@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TCP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT Serif&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+         <nav>
+             <ul>
+                 <li><a href="#intro">Introduction</a></li>
+                 <li><a href="#history">History</a></li>
+                 <li><a href="#standard">Standards</a></li>
+                 <li><a href="#status">Current Status</a></li> 
+                 <li><a href="#layers">Layers</a></li> 
+                 <li><a href="#about">About</a></li>            
+          </ul>
+            </nav>
+        
+         <img src="images/menu.png" class="menu">
+        </div>
+    <div class="row">
+        <div class="col-2">
+            <br>
+            <h1>ORIGIN OF TCP:<br>TRANSMISSION CONTROL PROTOCOL</h1>
+            <p>
+                In December 1974, a <i>Specification of Internet Transmission Control Program</i> was written and published by
+                Vint Cerf, Yogen Dalal and Carl Sunshine. The central component of this specification was <strong>TRANSMISSION CONTOL PROGRAM</strong>
+                which was later on divided into modular architecture consisting of <i>Transmission Control Protocol</i> and <i>Internet Protocol.</i>
+            </p>
+            <a href="#layers" class="btn">TCP Layers &#8594;</a>
+       
+        </div>
+      
+    </div>
+    </div>
+    </div>
+ 
+    <div class="categories">
+        
+        <div class="small-containers">
+            <h2 class="Title" id ="intro">Introduction</h2>
+            <div class="row">             
+                <div class="col-4">
+                    
+                    Transmission Control Protocol (TCP) is a fundamental and implemental model that holds the back of the Internet globally. 
+                    It is a system in which the message sent/received is successfully completed by passing the data through different 5 layers 
+                    of the protocol and each layer performs its respective work individually without being dependent on another layer. 
+                    Therefore, in this report we will discuss the history of TCP, TCP Standards and RFCs, Current Protocol Architecture 
+                    that includes the transfer of data through different 5 layers of TCP and their specifications in detail.       
+                </div>
+            </div>
+            <h2 class="Title" id="history">History of TCP</h2>
+            <div class="row">             
+                <div class="col-4">
+                    TCP/IP protocol suite has the broadest network protocol globally. It was created by two DARPA scientists- Vint Cerf and Bob 
+                    Kahn, in 1970. They are better known as “Fathers of the Internet”. They began researching dependable data transfer packet radio
+                     networks in 1973 and developed the next generation Transmission Control Protocol (TCP). The first version of this protocol was 
+                     written in 1973 and then revised and documented in RFC675 from late 1974. In 1983, ARPANET (the forerunner to the Internet) 
+                     approved it as a protocol standard. 
+                    This protocol was based on the concepts of CYCLADES which are responsible for sending and receiving data and routing from node 
+                    to node, using unreliable datagrams and associated end-to-end protocol mechanisms.
+                    TCP/IP was proclaimed the standard for all military computer networking by the US Department of Defense in March 1982. In 1985, 
+                    250 vendor representatives attended a workshop for 3 days held by the Internet Architecture which promotes the protocol and leads 
+                    commercial productivity (SCOS, n.d.).
+                    These days TCP has become the standard Internet communication protocol that enables communication over long distances digitally. 
+                    TCP is in charge of accumulating and putting the data packets together again that are initially broken into small packets by the 
+                    Internet, while IP ensures that the packets are delivered to the correct location.  
+                </div>
+            </div>
+            <div id = "observation-cards">
+            <div class="cards">             
+                <h2 class="Title" id="standard">TCP Standards and RCFs</h2>
+                <div class="col-4-cards">
+                    <br><br>
+                    The Internet Engineering Task Force, also known as IETF, sets the standards for how the Internet works. Instead of having predefined 
+                    rules, the IETF simply oversees the process of developing standards. An RFC is a standard that is published on an Internet site under 
+                    a request for comments. It is usually preceded by an RFC number, which is assigned to the document by the IETF. More than 3,500 RFCs 
+                    were available at the time of this writing. The oldest one, which was published in 1969, is RFC 0001 (sourceDaddy, n.d.). RFC793 was 
+                    applied to TCP in September 1981. 
+                </div>
+            </div>
+            
+            <div class="cards">             
+                <h2 class="Title" id="status">Current Status of TCP</h2>
+                <div class="col-4-cards">
+                    <br><br>
+                    The Transmission Control Protocol (TCP) is one of the most significant Internet protocols. The Internet Protocol Suite can be thought 
+                    of as a collection of layers, each of which performs its own function involving data transport and provides a well-defined service to 
+                    upper layer protocols depending on lower layer services. Hence, the whole suite is better referred to as TCP/IP. 
+                    </div>
+                    </div>
+                </div>
+        </div>
+            <div class="header">
+                <div class="container">
+            
+                <div class="row">
+                    <div class="col-2" id="layers">
+                        <br>
+                        <h1>STACKING THE TCP LAYERS</h1>
+                        <p>
+                            A Layered architecture involves the movement or processing of data or messages from one defined level of processing to another. In 
+                            TCP/IP Protocol, we have 5 layers:
+                            Application Layer, Transport Layer, Internet Layer, Data Link Layer, and Physical Layer.
+                            Let us structure the TCP model as the 5-Layered architecture of the Food-Delivery system from Dominos to Customer. The 5 layers involved in the structure 
+                            of the food-delivery system are: ordering pizza, checking for any offers or discounts, tracking location, sending for delivery, and routing. 
+                        </p>    
+                </div>
+                </div>
+                </div></div>
+                <br><br>
+                <h2 class="Title">Application Layer</h2>
+                <div class="row">             
+                    <div class="col-4">
+                        When a person orders pizza online from the Dominos app or their website on chrome or Firefox, this layer converts the text searched into a digital format using
+                         UTF-8 encoding. In other words, it connects the client to the server that is it connects the order site so that person may place his/her order. So, when the 
+                         customer is choosing toppings and selecting an order on Domino’s site, this activity is performed under this layer. Moreover, if pizza is not delicious and 
+                         made according to their choice, customers may complain regarding the quality of pizza to the manager/owner of the restaurant. 
+                    </div>
+                </div>
+                <h2 class="Title">Specifications:</h2>
+                <div class="row">             
+                    <div class="col-4">
+                        When the customer opens Domino’s website (let here, www.dominos.ca ) to place his order from his phone or laptop (any digital device) and types the URL as <i>www.dominos.ca</i> of 
+                        the restaurant’s site. The URL that the consumer types into his browser is the address of the server to which he is requesting that a TCP channel be opened to the server that 
+                        replies to the URL. However, he is making a request via laptop as a client. In this situation, his electronic device (say, laptop), which is making the request, is the client.
+His browser will extract the HTTP part of the URL and understand that it is the name of the network protocol to use once he types it into your browser. Then it extracts the domain name from the URL and
+ requests an IP address from the internet Domain Name Server (DNS). The IP address of the Domino website will be returned to the browser once it has been discovered. <strong>(Message sequence) </strong>Further, the client 
+ sends an HTTP request message to the server and the server returns an HTTP-response message which answers the client request or sends an error message.
+ <strong>(Message Type) </strong>HTTP GET instructs the server to obtain and return the webpage that should be shown, or to return a file at the specified URL. And POST uploads a file to the web server for processing. 
+ The message is accepted by HTTP, and the 200 is a success code indicating that the requested file has been returned. The first line in Figure 1 begins with HTTP/1.1, indicating that the server is running a 
+ compliant version. "200 OK" indicates that the server recognises the protocol with which the client wishes to communicate. The second line in the diagram below indicates that the server has returned the 
+ request. The third line will indicate the date and time while the fourth line will specify the content type that is returned. However, HTTP will be used here (in the case of the Domino website) The TCP 
+ connection is closed when the server sends the response.
+<strong>(Message Syntax)</strong> If the server cannot find or locate the site, it will respond with the header; there is no trailer.
+
+<strong>(Type of Connection)</strong> Domino's website will receive an HTTP connection as <i>https://www.dominos.ca/</i>. HTTP provides interaction between client and server by transmitting hypertext messages.
+ After the connection is made, the message is converted into digital format and therefore passed to Transport Layer for Order structure.  
+
+                </div>
+                </div>
+                <h2 class="Title">Transport Layer</h2>
+                <div class="row">             
+                    <div class="col-4">
+                        This layer accepts data from application layers and checks if all the data is correct by controlling the reliability through flow control, segmentation and de-segmentation, and error control. 
+                        Here, the checking of all the order details from order-check to order-claim is processed. In this food-delivery system, it will check for deal/offer/discounts that involve the type of pizza
+                         (like cheese pizza, veg pizza, pepperoni pizza etcetera) ordered by the customer, its toppings, and size of pizza. The order details layer provides this facility either on occasions, any 
+                         special offer day, or to those who have membership coupons.
+ Further, the Transport layer adds a header to the TCP packet and passes the packet to the  
+Internet layer for Order structure.
+
+                    </div>
+                </div>
+                <h2 class="Title">Internet Layer</h2>
+                <div class="row">             
+                    <div class="col-4">
+                        The Internet layer process encapsulates the packet inside an IP datagram by adding an IP header. After the orders are accomplished, they are packed in the boxes and just like sending packages
+                         will add an IP address of the destination. The Internet layer process encapsulates the packet inside an IP datagram by adding an IP header. This will help the GPS system to keep track of various
+                          networks on the internet and find the correct receiver of the order. We can also add extra information about the destination in the next Data-Link layer.
+
+                    </div>
+                </div>
+                <h2 class="Title">Data Link Layer</h2>
+                <div class="row">             
+                    <div class="col-4">
+                        For customers who have their orders, order details and offers checked and are packed needs information to reach their right recipient. The order is packed and routed to its destination. 
+                        While customers are waiting for their orders and their orders are sent for delivery, routing takes place. This layer adds the home address (destination) of the customers in the form of 
+                        a MAC (Media Access Control) address that allows the GPS system to track the location of the order that the customer will be receiving. 
+ 
+                    </div>
+                </div>
+                <h2 class="Title">Physical Layer</h2>
+                <div class="row">             
+                    <div class="col-4">
+                        This layer connects the sending computer to a switch, router, or host. Here, while drivers are out for delivery, food-delivery routing function processes. Customers place Pizza orders; 
+                        the package is sent through this layer to the customer. The packaging is removed upon receiving the order, the customer enjoys his/her food and later Dominos will contact them if they 
+                        have received the order and ask them to review their food and delivery service on their website or app. So, there is a direct connection from the application layer to the application 
+                        layer (here, order layer to review layer) from ordering a pizza to reaching the customer’s address. Therefore, the message travels down 5 layers (from the application layer), across the
+                         physical layer, and up 5 layers to the application layer on the receiving computer.
+ 
+                    </div>
+                </div>
+                <div class="header">
+                    <div class="container">
+                
+                    <div class="row">
+                        <div class="col-2">
+                            <br>
+                            <h1>Conclusion</h1>
+                            <p>
+                                TCP/IP protocols contain a layer-based framework like the OSI model. Because of its efficiency and security, the TCP protocol is the most widely used model. TCP/low IP's overhead is what
+                                makes it so efficient. The performance of any network is crucial, and TCP is unrivalled in terms of speed and efficiency. Other advantages of using TCP include fast failure recovery, the 
+                                ability to add networks without disrupting existing services, handling of high error rates, and platform independence.
+                           
+                            </p>    
+                    </div>
+                    </div>
+                    </div></div>
+               
+              
+    </div>
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div class="footer-col-1">
+                      <br><br><br>
+                      <h3 id="about">Bibliography</h3>
+                      
+                      
+                  </div>
+                 
+                    <div class="footer-col-3">
+                      <h3>References:</h3>
+                     <ul>
+                         <li  class="refer1"><a href="https://sourcedaddy.com/windows-xp/tcp-ip-standards-and-rfcs.html">sourceDaddy. (n.d.). Windows XP / Networking. https://sourcedaddy.com/windows-xp/tcp-ip-standards-and-rfcs.html</a></li>
+                         <li class="refer2"><a href="https://scos.training/history-of-tcp-ip">SCOS. (n.d.). History of TCP/IP. https://scos.training/history-of-tcp-ip/</a></li>
+                         <li  class="refer3"><a href="https://my.senecacollege.ca">Kaur, M. (n.d.). DCF255: Lecture2_DCF255_StandardOrg-2020 [PowerPoint slides]. Learn@Seneca. https://my.senecacollege.ca. Copyright n.d. by Maninder Kaur</a></li>
+                      
+                     </ul>
+                  </div>
+                  
+              
+              </div>
+              <hr>
+              <p3 class="Copyright">Copyright 2021- Karandeep Kaur</p3>
+          </div>
+      </div>
+    
+    
+</body>
+</html>
